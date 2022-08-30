@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NijuShabin</title>
+    <link rel="icon" type="image/x-icon" href="shot-cropped-1581709453661.png">
+    <link rel="stylesheet" href="NijuShabin.css">
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="NS.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.menu').on('click', function() {
+                $('.a-class').toggleClass('sesame');
+                $('.a-class a').toggleClass('fade');
+            });
+            $('.a-class').on('click', function() {
+                $('.a-class').removeClass('sesame');
+                $('.a-class a').toggleClass('fade');
+            });
+
+        });
+    </script>
+
+</head>
+<body>
+    <div class="home" id="hom">
+         <h1>Hey You all Matees. Welcome to the Declaration Of Nijushabin</h1>
+    </div>
+    <div class="header" >
+        <a href="#hom" class="Head-a"> <span>NijuShabin</span> </a>
+        <div class="menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="a-class">
+            <a href="#who-h">Who's He</a>
+            <a href="#dre">What's His Dream</a>
+            <a href="#pla">Some Of His Plan's</a>
+            <a href="#">Quotes</a>
+        </div>    
+    </div>
+    <div class="who-he" id="who-h">
+        <h1>He is more of a kid got heck alot of dreamz  burning inside him</h1>
+    </div>
+    <div class="dreams" id="dre">
+        <h1>well first of all Starting with iron man then, Yeah alot Things. see it with your eyes later.</h1>
+    </div>
+    <div class="plans" id="pla">
+        <h1>Nope No Revealing of plans Now</h1> 
+    </div>
+    
+</body>
+</html>

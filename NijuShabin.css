@@ -1,0 +1,190 @@
+
+  @font-face {
+    font-family: 'font-black';
+    src: url(fonts/BlackStars-Regular.svg#BlackStars-Regular) format('svg'),
+         url(fonts/BlackStars-Regular.ttf) format('truetype'),
+         url(fonts/BlackStars-Regular.woff) format('woff');
+    src: url(fonts/BlackStarsRegular-ax77a.eot);
+    src: url(fonts/BlackStarsRegular-ax77a.eot?#iefix) format('embedded-opentype'),
+         url(fonts/BlackStarsRegular-ax77a.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  } 
+
+  @font-face {
+    font-family: 'font-rein';
+    src: url(fonts/font2/Reinkey-Regular.svg#Reinkey-Regular) format('svg'),
+         url(fonts/font2/Reinkey-Regular.ttf) format('truetype'),
+         url(fonts/font2/Reinkey-Regular.woff) format('woff');
+    src: url(fonts/font2/ReinkeyRegular-lgWYX.eot);
+    src: url(fonts/font2/ReinkeyRegular-lgWYX.eot?#iefix) format('embedded-opentype'),
+         url(fonts/font2/ReinkeyRegular-lgWYX.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html{
+    scroll-behavior: smooth;
+}
+  
+body{
+    margin: 0;
+    padding: 0;
+    background-color: deepskyblue;
+    font-family: sans-serif;
+}
+.home{
+    height: 90vh;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+.header{
+    height: 76px;
+    background-color: dimgrey;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+.header span{
+    margin-left: 28px;
+    font-size: x-large;
+    font-family: font-black;
+}
+.menu{
+    height: 20px;
+    width: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    visibility: hidden;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    text-align: center;
+}
+.line{
+    height: 0px;
+    width: 30px;
+    border-radius: 3px;
+    border-style: solid;
+}
+.header a{
+    text-decoration: none;
+    padding: 0 16px;
+}
+.Head-a{
+    color: black;
+    z-index: 9999;
+}
+.who-he{
+    height: 100vh;
+    background-color: hotpink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+.dreams{
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    padding: 2rem;
+    background-image: url('wallpaperflare.com_wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.dreams h1{
+    width: 50%;
+    position: absolute;
+    left: 5%;
+    text-align: center;
+}
+.plans{
+    height: 90vh;
+    background-color: #2b1055;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2rem;
+    text-align: center;
+}
+@media (max-width: 769px){
+    .header{
+        height: 67px;
+        margin: -1px 0 0 0;
+    }
+    .header span{
+        align-content: center;
+        margin: 0;
+    }
+    .menu{
+        visibility: visible;
+        z-index: 5;
+    }
+    .a-class{
+    height: 100vh;
+    width: 100%;
+    top: 0%;
+    position: fixed;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    margin: 0 0 0 -17px;
+    clip-path: circle(10px at 90% -10%);
+    -webkit-clip-path: circle(10px at 90% -10%);
+    transition: all 1s ease-out;
+}
+.a-class a{
+    opacity: 0;
+    color: gold;
+}
+.a-class a:nth-child(1){
+    transition: all 0.5s ease 0.2s;
+}
+.a-class a:nth-child(2){
+    transition: all 0.5s ease 0.4s;
+}
+.a-class a:nth-child(3){
+    transition: all 0.5s ease 0.6s;
+}
+.a-class a:nth-child(4){
+    transition: all 0.5s ease 0.8s;
+}
+.a-class a.fade{
+    opacity: 1;
+}
+.sesame{
+    clip-path: circle(1300px at 90% -10%);
+    -webkit-clip-path: circle(1300px at 90% -10%); 
+    transition: all 2s ease-out;
+}
+.dreams h1{
+    width: 100%;
+    position: relative;
+    left: 0%;
+    text-align: center;
+}
+}
